@@ -18,4 +18,14 @@ public class ArrayTests {
     int[] input1 = {1,2,3,4,5 };
     assertArrayEquals(new int[]{5,4,3,2,1 }, ArrayExamples.reversed(input1));
   }
+
+  @Test
+  public void testaveragewol() {
+    double[] input1 = {1.0,1.0,2.0,3.0,4.0,5.0 };
+    double awol = ArrayExamples.averageWithoutLowest(input1);
+    double expected = 15.0/5.0;
+    assertEquals(expected,awol,0.001);
+
+  }
+
 }
